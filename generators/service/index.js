@@ -102,8 +102,8 @@ var ServiceTestableModuleSubGenerator = yeoman.generators.Base.extend({
                 // Replace /* include:services */ with the newly created file.
                 // Replace /* include:test */ with the newly created test file.
                 karmaConf = karmaConf
-                    .replace('/* include:' + folder + ' */' , '/* include:' + folder + ' */ \n        \'' + fileDestinationPath + '\'')
-                    .replace('/* include:tests */' , '/* include:tests */ \n        \'' + testFileDestinationPath + '\'');
+                    .replace('/* include:' + folder + ' */' , '/* include:' + folder + ' */ \n        \'' + fileDestinationPath + '\',')
+                    .replace('/* include:tests */' , '/* include:tests */ \n        \'' + testFileDestinationPath + '\',');
 
                 this.write(karmaConfPath, karmaConf);
             }

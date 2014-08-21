@@ -105,8 +105,8 @@ var ControllerTestableModuleSubGenerator = yeoman.generators.Base.extend({
             // Replace /* include:controller */ with the newly created file.
             // Replace /* include:test */ with the newly created test file.
             karmaConf = karmaConf
-                .replace('/* include:controllers */' , '/* include:controllers */ \n        \'' + controllerDestinationPath + '\'')
-                .replace('/* include:tests */' , '/* include:tests */ \n        \'' + testFileDestinationPath + '\'');
+                .replace('/* include:controllers */' , '/* include:controllers */ \n        \'' + controllerDestinationPath + '\',')
+                .replace('/* include:tests */' , '/* include:tests */ \n        \'' + testFileDestinationPath + '\',');
 
             this.write(karmaConfPath, karmaConf);
         }
