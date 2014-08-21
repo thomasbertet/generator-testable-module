@@ -3,5 +3,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-testable-module-generator' ]; then cd .. && eval "mv $currentfolder generator-testable-module-generator" && cd generator-testable-module-generator; fi
+  - if [ "$currentfolder" != 'generator-testable-module' ]; then cd .. && eval "mv $currentfolder generator-testable-module" && cd generator-testable-module; fi
 
