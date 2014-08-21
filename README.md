@@ -1,4 +1,4 @@
-# generator-testable-module-generator [![Build Status](https://secure.travis-ci.org/thomasbertet/generator-testable-module-generator.png?branch=master)](https://travis-ci.org/thomasbertet/generator-testable-module-generator)
+# generator-testable-module [![Build Status](https://secure.travis-ci.org/thomasbertet/generator-testable-module.png?branch=master)](https://travis-ci.org/thomasbertet/generator-testable-module)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -23,16 +23,16 @@ $ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-testable-module-generator from npm, run:
+To install generator-testable-module from npm, run:
 
 ```bash
-$ npm install -g generator-testable-module-generator
+$ npm install -g generator-testable-module
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo testable-module-generator
+$ yo testable-module
 ```
 
 ### Getting To Know Yeoman
