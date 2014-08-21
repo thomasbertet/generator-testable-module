@@ -1,0 +1,30 @@
+{
+    "dependencies": [
+        <%= compIsChicoDependent ? "\"chico/main\"" : ''%>
+    ],
+    "modules":[
+        "<%=moduleName%>"
+    ],
+    "scripts": [
+        "common/module.js",
+        "modules/services/<%=moduleName%>service.js",
+        "modules/configs/<%=moduleName%>config.js",
+        "modules/directives/<%=moduleName%>directive.js",
+        "modules/controllers/<%=moduleName%>controller.js",
+        "../reporting_configuration/configuration.js"
+    ],
+    "stylesheets": [
+        "common/css/<%=moduleName%>.css"
+    ],
+    "components": [
+        {
+            "provider": "<%=compProvider%>",
+            "label": "<%=compType%>",
+            "type": "<%=compType%>",
+            "template": "modules/templates/<%=moduleName.toLowerCase()%>template.html",
+            "configuration": "<%=compConfigurationPath%>",
+            "listeners": ["setFilter"],
+            "handlers": ["selection"]
+        }
+    ]
+}
