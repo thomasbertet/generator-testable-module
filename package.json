@@ -4,10 +4,13 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "generators/app/index.js",
-  "repository": "thomasbertet/generator-testable-module",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/thomasbertet/generator-testable-module.git"
+  },
   "author": {
-    "name": "",
-    "email": "",
+    "name": "Thomas BERTET",
+    "email": "thomas.bertet@gmail.com",
     "url": "https://github.com/thomasbertet"
   },
   "engines": {
