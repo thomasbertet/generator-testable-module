@@ -3,7 +3,7 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
-var chalk = require('chalk');
+//var chalk = require('chalk');
 
 var type = 'service';
 var folder = type + 's';
