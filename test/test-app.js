@@ -23,6 +23,8 @@ describe('testable-module:app', function () {
 
   it('creates files', function () {
     assert.file([
+      'test/spec/directive.js',
+      'common/css/pivottable.css',
       'package.json',
       '.editorconfig',
       '.jshintrc'

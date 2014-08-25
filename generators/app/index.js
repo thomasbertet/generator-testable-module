@@ -77,7 +77,7 @@ var TestableModuleGeneratorGenerator = yeoman.generators.Base.extend({
 
     this.copy('common/modules.js');
     this.copy('common/css/_module.css', 'common/css/' + this.moduleName +'.css');
-    this.directory('test', '/test');
+    this.directory('test', 'test');
 
     this.template('modules/configs/_config.js', 'modules/configs/' + this.configName.toLowerCase() + '.js');
     this.template('modules/services/_service.js', 'modules/services/' + this.serviceName.toLowerCase() + '.js');
